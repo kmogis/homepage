@@ -5,32 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyongmo의 홈페이지</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
+        * {
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
-        h1 {
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
             color: #333;
         }
-        p {
-            font-size: 18px;
-            color: #555;
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
         }
-        a {
-            display: block;
-            margin-top: 20px;
-            font-size: 16px;
-            color: blue;
+        nav {
+            background: #005bb5;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
             text-decoration: none;
+            margin: 10px;
+            font-size: 18px;
+            padding: 8px 15px;
+        }
+        nav a:hover {
+            background: white;
+            color: #005bb5;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #0073e6;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #333;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <h1>환영합니다!</h1>
-    <p>이것은 GitHub Pages로 만든 나의 첫 홈페이지입니다.</p>
-    <a href="research.html">연구 페이지</a>
+
+    <header>Kyongmo의 연구실</header>
+
+    <nav>
+        <a href="index.html">홈</a>
+        <a href="research.html">연구</a>
+        <a href="contact.html">연락처</a>
+    </nav>
+
+    <div class="container">
+        <h1>환영합니다!</h1>
+        <p>이곳은 Kyongmo 교수의 연구실 홈페이지입니다.</p>
+        <p>연구 주제, 강의 자료, 최신 논문 등을 공유할 예정입니다.</p>
+    </div>
+
+    <footer>
+        © 2025 Kyongmo 연구실 | 충북대학교 물리교육과
+    </footer>
+
 </body>
 </html>
