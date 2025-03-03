@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M² Lab</title>
+    <title>M² Lab | Magnonics & Microwave Lab</title>
     <style>
         * {
             margin: 0;
@@ -20,10 +20,17 @@
         header {
             background: #2c3e50;
             color: white;
-            padding: 25px;
+            padding: 20px;
             font-size: 28px;
             font-weight: bold;
             letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo img {
+            width: 120px;
+            margin-right: 15px;
         }
         nav {
             background: white;
@@ -40,6 +47,7 @@
             font-size: 18px;
             padding: 10px;
             display: inline-block;
+            transition: 0.3s ease-in-out;
         }
         nav a:hover {
             background: #2c3e50;
@@ -56,6 +64,12 @@
         }
         h1 {
             color: #2c3e50;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
         }
         footer {
             margin-top: 30px;
@@ -68,7 +82,12 @@
 </head>
 <body>
 
-    <header>M² Lab</header>
+    <header>
+        <div class="logo">
+            <img src="m2lab_logo.png" alt="M² Lab Logo">
+        </div>
+        M² Lab | Magnonics & Microwave Lab
+    </header>
 
     <nav>
         <a href="index.html">Home</a>
@@ -81,7 +100,9 @@
 
     <div class="container">
         <h1>Welcome to M² Lab</h1>
-        <p>We explore Magnonics, Microwave Spintronics, and Quantum Phenomena.</p>
+        <p>We explore <b>Magnonics, Microwave Spintronics, and Quantum Phenomena</b>.  
+           Our research aims to push the boundaries of spin-based technologies  
+           for next-generation computing and communication.</p>
     </div>
 
     <footer>
